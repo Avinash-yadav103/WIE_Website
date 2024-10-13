@@ -7,6 +7,7 @@ function App() {
     <>
       This is my App
       Hello there how are you 
+      This is Me Risshi 
     </>
   )
 }
