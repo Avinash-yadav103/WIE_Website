@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Nav from './assets/components/Nav'
 import Slider from './assets/components/Slider'
+import About from './assets/components/About'
 
 function App() {
 
@@ -9,9 +10,7 @@ function App() {
     <>
       <Nav />
       <Slider />
-      This is my App
-      Hello there how are you 
-      This is Me Risshi
+      <About />
     </>
   )
 }

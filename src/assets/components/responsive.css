@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-section, .text-section {
+      padding: 10px;
+    }
+  }
+  
