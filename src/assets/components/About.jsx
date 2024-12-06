@@ -1,21 +1,13 @@
 import React from "react";
 import './component.css';
 import image from '../images/hello.jpg'; 
-import purple from '../images/purple.jpg'; 
+import purple from '../images/Untitled.png'; 
 
 const About = () => {
   return (
     <div className="about-us-container">
       <div className="image-section">
-        <div className="colors1">
-            <img src={purple} alt="" />
-        </div>
-        <div className="main_img">
-            <img src={image} alt="IEEE WIE Event" className="about-us-image" />
-        </div>
-        <div className="colors2">
-            <img src={purple} alt="" />
-        </div>
+        <img src={purple} alt="" />
       </div>
       <div className="text-section">
         <h2>About Us</h2>

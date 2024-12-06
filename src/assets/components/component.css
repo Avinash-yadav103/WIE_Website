@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MyCustomFont'; /* Name of your font */
+  src: url('../fonts/Neoneon-3zaD6.otf') format('opentype'); /* Path to the font file */
+} 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -141,64 +146,36 @@
 /* About */
 .about-us-container {
   display: flex;
+  /* align-items: center;
+  justify-content: space-around; */
   flex-wrap: wrap; /* Ensures layout is responsive */
   background-color: #1a1a1a;
-  padding: 20px;
+  padding: 60px;
   border-radius: 10px;
   width: 100%;
+  height: auto;
+
 }
 
 .image-section {
-  flex: 1;
-  padding: 20px;
-  width: 45%;
-  height: 70vh;
-  background-color: white;
-  display: flex;
+  /* background-color: white; */
+  width: 40%;
 }
-
-.colors2 {
-  width: 80%;
-  height: 50%;
-  position: relative;
-  right: 0;
-  bottom: -50%;
-  border: 1px solid black;
-}
-
-.colors1 {
-  width: 80%;
-  height: 50%;
-  position:sticky;
-}
-
-.colors1 img{
+.image-section img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
-
-.colors2 img{
-  width: 100%;
-  height: 100%;
-}
-
-.main_img{
-  width: 50%;
-  height: 30%;
-  position: relative;
-
-}
-
-.main_img img{
-  width: 100%;
-  height: 100%;
-}
-
 
 .text-section {
   flex: 1;
   color: #e0d4f7;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
 .text-section h2 {
@@ -214,4 +191,146 @@
 .text-section p {
   margin: 10px 0;
   line-height: 1.6;
+}
+
+/* Events */
+
+.events-container {
+  text-align: center;
+  background-color: #e6d5f5;
+  padding: 50px;
+}
+
+.events-container h2 {
+  color: #3d3b5c;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.events-container p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.event-card {
+  /* background-color: white; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+
+/* CountdownTimer CSS */
+.countdown-container {
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-image: url('../images/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(5px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 40vh;
+}
+
+.countdown_left {
+  flex: 1;
+  padding-left: 60px;
+  text-align: left;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.countdown_left h1 {
+  font-size: 2rem;
+  width: 80%;
+  /* margin-bottom: 20px; */
+  text-wrap: wrap;
+  padding: 30px 30px 30px 0;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-family: 'MyCustomFont', sans-serif;
+  padding: 5vh;
+  width: 70%;
+}
+
+.time-section {
+  text-align: center;
+}
+
+.time-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.time-label {
+  font-size: 1rem;
+}
+
+.buy-ticket {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-ticket:hover {
+  background: rgba(255, 255, 255, 0.729);
+  color: #A020EF;
+  border-radius: 20px;
 }
