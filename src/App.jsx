@@ -5,6 +5,8 @@ import Slider from './assets/components/Slider'
 import About from './assets/components/About'
 import Events from './assets/components/Events'
 import CountdownTimer from './assets/components/CountdownTimer'
+import Footer from './assets/components/Footer'
+
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
       <About />
       <Events />
       <CountdownTimer targetDate="2024-12-31T23:59:59" />
+      <Footer />
     </>
   )
 }

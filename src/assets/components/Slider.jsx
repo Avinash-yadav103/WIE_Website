@@ -3,7 +3,8 @@ import './component.css';
 import Hello1 from '../images/hello.jpg';
 import Hello2 from '../images/hello2.jpeg';
 import Hello3 from '../images/hello3.jpg';
-
+import FirstYear from '../images/FirstYearApocalypse.jpg';
+import clubcar from '../images/clubcarnival24-.jpg';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -42,19 +43,19 @@ const Slider = () => {
   };
 
   return (
-    <div>
+    <div className='slideshow-container-whole'>
       <div className="slideshow-container">
         {/* Slide 1 */}
         <div className="mySlides fade">
           <div className="numbertext">1 / 3</div>
-          <img src={Hello1} style={{ width: '100%' }} alt="Slide 1" />
+          <img src={FirstYear} style={{ width: '100%' }} alt="Slide 1" />
           <div className="text">Caption Text</div>
         </div>
 
         {/* Slide 2 */}
         <div className="mySlides fade">
           <div className="numbertext">2 / 3</div>
-          <img src={Hello2} style={{ width: '100%' }} alt="Slide 2" />
+          <img src={clubcar} style={{ width: '100%' }} alt="Slide 2" />
           <div className="text">Caption Two</div>
         </div>
 

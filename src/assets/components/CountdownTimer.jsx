@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./component.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
 
 const CountdownTimer = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -42,14 +47,39 @@ const CountdownTimer = ({ targetDate }) => {
     });
 
     return (
-        <div className="countdown-container">
-            <div className="countdown_left">
-                <h1>Count Every Second Until Event</h1>
-                <button className="buy-ticket">Buy Ticket</button>
-            </div>
-            <div className="timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
+        <>
+            <div className="mainCount">
+                <div className="countdown-container">
+                    <div className="countdown_left">
+                        <h1>Count Every Second Until Event</h1>
+                        <button className="buy-ticket">Buy Ticket</button>
+                    </div>
+                    <div className="timer">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</div>
+                </div>
 
-        </div>
+                <div className="addingInfoBar">
+                    <div className="eventVenue">
+                        <div className="eventIcons">
+                            <FontAwesomeIcon icon={faLocationDot} size="1x" color="#A020EF" />
+                        </div>
+                        <div className="eventdetails">Event Venue:<div className="lala"> XYZ Convention Center</div></div>
+                    </div>
+                    <div className="eventMail">
+                        <div className="eventIcons">
+                            <FontAwesomeIcon icon={faEnvelope} size="1x" color="#A020EF" />
+                        </div>
+                        <div className="eventdetails">Contact Email:<div className="lala">  event@example.com</div></div>
+                        
+                    </div>
+                    <div className="eventPhone">
+                        <div className="eventIcons">
+                            <FontAwesomeIcon icon={faPhone} size="1x" color="#A020EF" />
+                        </div>
+                        <div className="eventdetails"> Contact Phone: <div className="lala"> +1234567890</div></div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 
