@@ -6,7 +6,8 @@ import {
   faFacebookF,
   faTwitter,
   faLinkedinIn,
-  faInstagram
+  faInstagram,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
@@ -31,12 +32,12 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam
             purus sit amet magna elemen facilisis.
           </p>
-          <div className="social-icons">
+          <div className="social-iconss">
             <a href="#" className="icon-link" aria-label="Facebook" target="blank">
               <FontAwesomeIcon icon={faFacebookF} size="1x" color="#A020EF" />
             </a>
-            <a href="#" className="icon-link" aria-label="Twitter" target="blank">
-              <FontAwesomeIcon icon={faTwitter} size="1x" color="#A020EF" />
+            <a href="https://github.com/ieeewiebu" className="icon-link" aria-label="Twitter" target="blank">
+              <FontAwesomeIcon icon={faGithub} size="1x" color="#A020EF" />
             </a>
             <a href="https://www.linkedin.com/in/ieee-wie-bu-96b3b4259/" className="icon-link" aria-label="LinkedIn" target="blank">
               <FontAwesomeIcon icon={faLinkedinIn} size="1x" color="#A020EF" />

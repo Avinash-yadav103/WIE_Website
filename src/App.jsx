@@ -7,7 +7,7 @@ import Events from './assets/components/Events'
 import CountdownTimer from './assets/components/CountdownTimer'
 import Footer from './assets/components/Footer'
 import SpeakersCarousel from './assets/components/SpeakersCarousel'
-
+import WieTeam from './assets/components/WieTeam'
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
       <About />
       <Events />
       <SpeakersCarousel />
+      <WieTeam />
       <CountdownTimer targetDate="2024-12-31T23:59:59" />
       <Footer />
     </>

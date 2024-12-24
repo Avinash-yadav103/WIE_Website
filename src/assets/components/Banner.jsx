@@ -16,11 +16,15 @@ function Banner() {
                     <div className="eventdetails">Event Venue:<div className="lala"> XYZ Convention Center</div></div>
                 </div>
                 <div className="eventMail">
-                    <div className="eventIcons">
-                        <FontAwesomeIcon icon={faEnvelope} size="1x" color="#A020EF" />
+                    <div className="eventIcons">  <a href="mailto:ieeewie@bennett.edu.in">
+                        <FontAwesomeIcon icon={faEnvelope} size="1x" color="#A020EF" /></a>
                     </div>
-                    <div className="eventdetails">Contact Email:<div className="lala">  event@example.com</div></div>
-                    
+                    <div className="eventdetails">
+                        Contact Email:
+                        <div className="lala">
+                            <a href="mailto:ieeewie@bennett.edu.in">ieeewie@bennett.edu.in</a>
+                        </div>
+                    </div>
                 </div>
                 <div className="eventPhone">
                     <div className="eventIcons">
