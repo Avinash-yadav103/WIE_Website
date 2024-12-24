@@ -1,13 +1,15 @@
 import React from "react";
 import './component.css';
 import image from '../images/hello.jpg'; 
-import purple from '../images/Untitled.png'; 
+import purple from '../images/Untitled.png';
+import teamimg from '../images/FirstYearApocalypse.jpg'; 
 
 const About = () => {
   return (
     <div className="about-us-container">
       <div className="image-section">
-        <img src={purple} alt="" />
+        <img src={purple} className="section-bg" alt="" />
+        {/* <img src={teamimg} className="floating-img" height="200" width='200' alt="" /> */}
       </div>
       <div className="text-section">
         <h2>About Us</h2>

@@ -8,7 +8,7 @@ import {
   faLinkedinIn,
   faInstagram
 } from '@fortawesome/free-brands-svg-icons'
-
+import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
 const Footer = () => {
 
@@ -26,23 +26,24 @@ const Footer = () => {
 
       <div className="footer-middle">
         <div className="footer-about">
-          <h3>Eventics</h3>
+          <h3>Women In Engineering</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam
             purus sit amet magna elemen facilisis.
           </p>
           <div className="social-icons">
-            <a href="#" className="icon-link" aria-label="Facebook">
-                <FontAwesomeIcon icon={faFacebookF} size="1x" color="#A020EF" />
+            <a href="#" className="icon-link" aria-label="Facebook" target="blank">
+              <FontAwesomeIcon icon={faFacebookF} size="1x" color="#A020EF" />
             </a>
-            <a href="#" className="icon-link" aria-label="Twitter">
-            <FontAwesomeIcon icon={faTwitter} size="1x" color="#A020EF" />
+            <a href="#" className="icon-link" aria-label="Twitter" target="blank">
+              <FontAwesomeIcon icon={faTwitter} size="1x" color="#A020EF" />
             </a>
-            <a href="#" className="icon-link" aria-label="LinkedIn">
-            <FontAwesomeIcon icon={faLinkedinIn} size="1x" color="#A020EF" />
+            <a href="https://www.linkedin.com/in/ieee-wie-bu-96b3b4259/" className="icon-link" aria-label="LinkedIn" target="blank">
+              <FontAwesomeIcon icon={faLinkedinIn} size="1x" color="#A020EF" />
             </a>
-            <a href="#" className="icon-link" aria-label="Instagram">
-            <FontAwesomeIcon icon={faInstagram} size="1x" color="#A020EF" />
+            <a href="https://www.instagram.com/wieieee.bu/" className="icon-link" aria-label="Instagram" target="blank">
+              <FontAwesomeIcon icon={faInstagram} size="1x" color="#A020EF" />
+              
             </a>
           </div>
           {/* <div className="social-icons">
@@ -63,31 +64,33 @@ const Footer = () => {
         <div className="footer-links">
           <div>
             <h4>Find Events</h4>
-            <ul>
-              <li>Outdoor Concerts</li>
-              <li>Indoor Concerts</li>
-              <li>Festivals</li>
-              <li>Concerts</li>
-              <li>Event Calendar</li>
+            <ul className="footer-events">
+              <li><FontAwesomeIcon icon={faBookmark} />  Outdoor Concerts</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  Indoor Concerts</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  Festivals</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  Concerts</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  Event Calendar</li>
             </ul>
           </div>
           <div>
             <h4>Useful Links</h4>
-            <ul>
-              <li>Log In</li>
-              <li>Register</li>
-              <li>About Eventek</li>
-              <li>How It Works</li>
+            <ul className="footer-events">
+              <li><FontAwesomeIcon icon={faBookmark} />  Log In</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  Register</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  About WIE</li>
+              <li><FontAwesomeIcon icon={faBookmark} />  How It Works</li>
             </ul>
           </div>
         </div>
         <div className="footer-events">
           <h4>Upcoming Events</h4>
           <div>
+            <img src="" alt="" />
             <p>Web Developer Meetup</p>
             <small>24 Jan, 2024</small>
           </div>
           <div>
+            <img src="" alt="" />
             <p>Web Developer Meetup</p>
             <small>24 Jan, 2024</small>
           </div>
@@ -95,7 +98,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024, Eventek All Rights Reserved.</p>
+        <p>© 2024, WIE IEEE Bennett University All Rights Reserved.</p>
       </div>
     </footer>
   );

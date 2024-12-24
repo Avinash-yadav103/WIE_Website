@@ -1,0 +1,138 @@
+.speakers-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.speaker-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  z-index: 2;
+}
+
+.speaker-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.speaker-info p {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.social-icons {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 3;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #333;
+  color: white;
+}
+
+.nav-button {
+  position: absolute;
+  top: -3rem;
+  background: none;
+  border: 1px solid #ccc;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.nav-button.prev {
+  right: 4rem;
+}
+
+.nav-button.next {
+  right: 1rem;
+}
+
+.speaker-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 70, 255, 0.6) 0%, rgba(0, 70, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.speaker-card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}
