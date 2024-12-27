@@ -22,6 +22,7 @@
     padding: 10px;
     background: #E94ECD;
     margin-bottom: 1.5rem;
+    border-radius: 50%;
   }
   
   .member-image {
@@ -30,6 +31,7 @@
     object-fit: cover;
     display: block;
     filter: grayscale(100%);
+    border-radius: 50%;
   }
   
   .member-name {
