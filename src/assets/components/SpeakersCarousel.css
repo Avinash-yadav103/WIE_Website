@@ -102,7 +102,7 @@
 }
 
 .nav-button:hover {
-  background-color: #333;
+  background-color: #414141;
   color: white;
 }
 
@@ -112,6 +112,10 @@
 
 .nav-button.next {
   right: 1rem;
+}
+
+.leftnavigation{
+  color: black;
 }
 
 .speaker-card::before {

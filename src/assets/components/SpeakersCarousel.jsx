@@ -3,27 +3,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './SpeakersCarousel.css';
-import hello from '../images/hello2.jpeg';
+import image1 from '../images/ShraddhaKhapra.jpg';
+import image2 from '../images/TanishaSharma.jpg';
+import image3 from '../images/Anmol.png';
 
 const speakers = [
   {
     id: 1,
-    name: 'Esther Howard',
-    title: 'Music speaker',
-    image: '/placeholder.svg?height=400&width=300'
+    name: 'Shraddha Khapra',
+    title: 'Education speaker',
+    image: image1,
+    insta: 'https://www.instagram.com/shraddhakhapra/'
   },
   {
     id: 2,
-    name: 'Sarah Chen',
+    name: 'Tanisha Sharma',
     title: 'Business speaker',
-    image: '/placeholder.svg?height=400&width=300'
+    image: image2
   },
   {
     id: 3,
-    name: 'Michael Roberts',
+    name: 'Anmol Arora',
     title: 'Technology speaker',
-    image: '/placeholder.svg?height=400&width=300'
-  }
+    image: image3,
+    linkedIn : 'https://www.linkedin.com/in/0xanmol/'
+  },
+  // {
+  //   id: 4,
+  //   name: 'Michael Roberts',
+  //   title: 'Technology speaker',
+  //   image: '/placeholder.svg?height=400&width=300'
+  // }
 ];
 
 const SocialIcon = ({ icon }) => (
@@ -34,7 +44,7 @@ const SocialIcon = ({ icon }) => (
 
 const SpeakerCard = ({ name, title, image }) => (
   <div className="speaker-card">
-    <img src={hello} alt={name} className="speaker-image" />
+    <img src={image} alt={name} className="speaker-image" />
     <div className="social-icons">
       <SocialIcon icon={faFacebookF} />
       <SocialIcon icon={faInstagram} />
@@ -69,10 +79,10 @@ const SpeakersCarousel = () => {
       
       <div className="carousel-container">
         <button className="nav-button prev" onClick={prevSlide}>
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon icon={faChevronLeft} className='leftnavigation' />
         </button>
         <button className="nav-button next" onClick={nextSlide}>
-          <FontAwesomeIcon icon={faChevronRight} />
+          <FontAwesomeIcon icon={faChevronRight} className='leftnavigation' />
         </button>
 
         <div className="speakers-grid">

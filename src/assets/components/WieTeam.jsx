@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import hello from '../images/hello.jpg';
+import image from '../images/ShraddhaKhapra.jpg';
 import './members.css';
 
 const teamMembers = [
@@ -10,7 +10,7 @@ const teamMembers = [
     name: 'MARY BROWN',
     role: 'creative leader',
     bio: 'Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum',
-    image: '/placeholder.svg?height=300&width=300'
+    image: image
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const teamMembers = [
 const TeamMember = ({ name, role, bio, image }) => (
   <div className="team-member">
     <div className="image-container">
-      <img src={hello} alt={name} className="member-image" />
+      <img src={image} alt={name} className="member-image" />
     </div>
     <h2 className="member-name">{name}</h2>
     <h3 className="member-role">{role}</h3>

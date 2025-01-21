@@ -1,8 +1,11 @@
-'use client'
+// 'use client'
 
 import React, { useState } from 'react'
 import { Document, Page, pdfjs } from 'react-pdf'
-import './NewsletterGrid.css'
+import './Newsletter.css'
+import N1 from '../images/Newsletter1.pdf'
+import T1 from '../images/Newsletter1.png'
+
 
 // Configure PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
@@ -13,8 +16,8 @@ const newsletters = [
     title: 'January 2024 Newsletter',
     description: 'Monthly updates and news from January 2024',
     date: '2024-01-01',
-    pdfUrl: '/sample.pdf',
-    thumbnail: '/placeholder.svg?height=400&width=300'
+    pdfUrl: N1,
+    thumbnail: T1
   },
   {
     id: 2,

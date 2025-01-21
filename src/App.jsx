@@ -9,7 +9,7 @@ import Footer from './assets/components/Footer'
 import SpeakersCarousel from './assets/components/SpeakersCarousel'
 import WieTeam from './assets/components/WieTeam'
 import {Router, Route, Routes } from 'react-router-dom'
-// import Newsletter from './assets/components/Newsletter'
+import Newsletter from './assets/components/Newsletter'
 
 function App() {
 
@@ -20,8 +20,8 @@ function App() {
       <Events />
       <SpeakersCarousel />
       <WieTeam />
-      {/* <Newsletter /> */}
-      <CountdownTimer targetDate="2024-12-31T23:59:59" />
+      <Newsletter />
+      <CountdownTimer targetDate="2025-01-15T23:59:59" />
       <Footer />
 
       <Routes>
