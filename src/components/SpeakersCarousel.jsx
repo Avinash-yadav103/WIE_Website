@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './SpeakersCarousel.css';
-import hello from '../images/hello2.jpeg';
+import hello from '../assets/images/hello2.jpeg';
 
 const speakers = [
   {

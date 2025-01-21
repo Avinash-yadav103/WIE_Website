@@ -1,8 +1,8 @@
 import React from "react";
 import './component.css';
-import image from '../images/hello.jpg'; 
-import purple from '../images/Untitled.png';
-import teamimg from '../images/FirstYearApocalypse.jpg'; 
+import image from '../assets/images/hello.jpg'; 
+import purple from '../assets/images/Untitled.png';
+import teamimg from '../assets/images/FirstYearApocalypse.jpg'; 
 
 const About = () => {
   return (

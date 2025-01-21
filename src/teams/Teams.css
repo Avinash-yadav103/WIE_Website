@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Peralta&display=swap");
+
+.teams-main-wrapper {
+  display: flex; /* Aligns left and right sections side by side */
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 65px;
+}
+
+.teams-left-wrapper {
+  background-color: #15171B;
+  color: white;
+  font-family: 'Peralta', cursive;
+  font-size: 100%;
+  padding: 20px;
+  width: 20%; /* Adjust the width as needed */
+  height: auto;
+  box-sizing: border-box;
+}
+
+.teams-right-wrapper {
+  width: 80%;
+
+}
+.team-cleft-wrapper h2{
+  position: fixed;
+  top: 0;
+}
+.teams-container {
+  color: rgb(39, 39, 39);
+  font-family: "Peralta", cursive;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive columns */
+  padding-top: 25px;
+  gap: 5px;
+  background-color: #15171B;
+}
+
+.teams-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 12px;
+  position: relative;
+  max-width: 355px;
+}
+
+.memberImage {
+  width: 100%;
+  height: auto;
+  border: solid;
+  border-color: black;
+  border-radius: 6px;
+  max-width: 350px;
+}
+
+.team-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-icons-teams {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end; /* Aligns icons to the right */
+}
+
+.social-icons-teams .svg-inline--fa {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 878px) {
+  .teams-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Change min width to 150px */
+  }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./component.css"; // Add custom styling here
-import Banner from "./Banner";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -22,7 +21,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <Banner />
       </div>
 
       <div className="footer-middle">

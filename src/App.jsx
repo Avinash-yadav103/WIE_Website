@@ -1,34 +1,23 @@
 import { useState } from 'react'
-import './App.css'
-import Nav from './assets/components/Nav'
-import Slider from './assets/components/Slider'
-import About from './assets/components/About'
-import Events from './assets/components/Events'
-import CountdownTimer from './assets/components/CountdownTimer'
-import Footer from './assets/components/Footer'
-import SpeakersCarousel from './assets/components/SpeakersCarousel'
-import WieTeam from './assets/components/WieTeam'
-import {Router, Route, Routes } from 'react-router-dom'
-// import Newsletter from './assets/components/Newsletter'
+import Nav from './components/Nav'
+import Home from './components/Home'
+import About from './components/About'
+import Events from './components/Events'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Teams from './teams/Teams'
+
 
 function App() {
 
   return (
     <>
       <Nav />
-      <Slider />
-      <Events />
-      <SpeakersCarousel />
-      <WieTeam />
-      {/* <Newsletter /> */}
-      <CountdownTimer targetDate="2024-12-31T23:59:59" />
-      <Footer />
-
       <Routes>
-          {/* <Route path="/home" element={<Slider />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/blogs" element={<Events />} />
+          <Route path="/team" element={<Teams />} />
           <Route path="/newsletter" element={<Events />} />
       </Routes>
     </>
